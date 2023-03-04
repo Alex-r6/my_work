@@ -4,14 +4,17 @@ const box = document.querySelector('.box');
 const check = document.querySelector('.check')
 
 function make_border(){
-    for(const elem of inp){
-        if(elem.value.length === 0 || check.checked != true){
-            elem.style.borderColor = 'red'
-        }else{
-                // box.style.bottom = '0px';
-                box.style.display = 'flex';
-            }
+for (let index = 0; index < inp.length; index++) {
+    if(inp[index].value.length === 0 || check.checked != true){
+        inp[index].style.borderColor = 'red'
+    }else{
+            // box.style.bottom = '0px';
+            box.style.display = 'flex';
+            box.innerHTML = `${inp[0].value} <br>
+                             ${inp[2].value}<br>
+                             ${inp[4].value}`
         }
-        console.log(check.checked)
-    }
+    } 
+}
+
 btn.onclick = make_border;
