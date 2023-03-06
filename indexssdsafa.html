@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        
+        .vim {
+            display: flex;
+            /* justify-content: space-between; */
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: red;
+        }
+
+        .vim input {
+            margin: 10px 0;
+            min-width: 300px;
+            width: calc(50% - 8px);
+
+        }
+
+        /* .vim {
+            display: flex;
+            justify-content: space-between;
+            background-color: red;
+        }
+        .vim input {
+            width: 50%;
+        } */
+        .ok {
+            position: fixed;
+            /* bottom: 0; */
+            bottom: -100%;
+            right: 0;
+            background-color: green;
+            padding: 10px 90px;
+            transition: all 0.5s;
+        }
+
+        .ok.open {
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="vim">
+            <input type="text" class="inut" name="" id="">
+            <input type="text" class="inut" name="" id="">
+        </div>
+    </div>
+    <div class="ok">
+        <h1>Ok</h1>
+    </div>
+
+
+    <script>
+
+        const okiii = document.querySelector('.ok')
+        const input = document.querySelector('input')
+
+
+
+        const checkInput = ()=>{
+            console.log(input.value);
+            console.log(input.value === '');
+            console.log(input.value.length);
+
+             // trim()
+        }
+
+        okiii.classList.add('open')
+        // ok.classList.remove('open')
+
+        const arrs = ['hello', 'oth', 'robert']
+
+        const checkArr = (arr) => {
+            let isFind = false;
+            for(const word of arr){  // hello oth
+                if(word.length < 4) { //3 < 4
+                    isFind = true;
+                } 
+            }
+            console.log(isFind);
+        }
+
+        // checkArr(arrs)  //  false no find eleme length 123 | true 123
+
+        // if(elem < min){
+        //     min = elem
+        // } else if(elem > max){
+        //     max = elem
+        // }
+        const min = 1
+        const max = 10
+
+        const res = max + ' ' + min
+    
+
+        // '1 10'
+        // [1, 10]
+
+
+        // if (2 > 1) {
+        //     console.log(2);
+        // } else if (4 > 1){
+        //     console.log(4);
+        // }
+
+    </script>
+
+</body>
+
+</html>
