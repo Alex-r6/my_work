@@ -1,0 +1,17 @@
+.style{
+    display: flex;
+    height: 140px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.box {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: chartreuse;
+    margin-bottom: 10px;
+}
+.box div {
+    margin-left: 10px;
+}

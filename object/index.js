@@ -76,21 +76,37 @@ const slkad = [
 ]
 // slkad[0].data.from
 // innerHTML = `<div>asdasd</div>`
+const res = document.querySelector('.res')
+function make(){
+    res.innerHTML = `<div class="style">`
+    const style = document.querySelector('.style')
+    const todo = [
+        {
+            language : 'HTML',
+            isActive : true,
+            id : 'asdasfsaasf'
+        },
+        {
+            language : 'CSS',
+            isActive : true,
+            id : 'as3dasfsaasf'
+        },
+        {
+            language : 'JS',
+            isActive : false,
+            id : '239ek2'
+        },
+    ]
+    for(const elem of todo){
+        style.innerHTML += `<div class="box">`
+        const box = document.querySelector('.box')
+        box.innerHTML += `<input  class="check "  type="checkbox">`
+        box.innerHTML += `<div>${elem.language}</div>`
+        // const check = document.querySelector('.check')
+        // if(elem.isActive){
+        //     check.checked === 'checked'
+        // }
+    }
+}
+make()
 
-const todo = [
-    {
-        language : 'HTML',
-        isActive : true,
-        id : 'asdasfsaasf'
-    },
-    {
-        language : 'CSS',
-        isActive : true,
-        id : 'as3dasfsaasf'
-    },
-    {
-        language : 'JS',
-        isActive : false,
-        id : '239ek2'
-    },
-]
