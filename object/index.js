@@ -77,20 +77,35 @@ const slkad = [
 // slkad[0].data.from
 // innerHTML = `<div>asdasd</div>`
 
-const todo = [
-    {
-        language : 'HTML',
-        isActive : true,
-        id : 'asdasfsaasf'
-    },
-    {
-        language : 'CSS',
-        isActive : true,
-        id : 'as3dasfsaasf'
-    },
-    {
-        language : 'JS',
-        isActive : false,
-        id : '239ek2'
-    },
-]
+const res = document.querySelector('.res')
+
+function home_work() {
+    const todo = [
+        {
+            language : 'HTML',
+            isActive : true,
+            id : 'asdasfsaasf'
+        },
+        {
+            language : 'CSS',
+            isActive : true,
+            id : 'as3dasfsaasf'
+        },
+        {
+            language : 'JS',
+            isActive : false,
+            id : '239ek2'
+        },
+    ]
+    for(let elem of todo){
+        body.innerHTML = `<div class="style"></div>`                   
+        if(elem.isActive){
+            res.innerHTML += `<input  class="check "  type="checkbox" checked>`
+        }
+        res.innerHTML += `<div>${elem.language}</div>`
+    }
+
+
+}
+home_work()
+
