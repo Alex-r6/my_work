@@ -1,0 +1,25 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.h2 {
+    text-align: center;
+}
+.main{
+    width: 35%;
+    background-color:orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 40px;
+}
+.p {
+    font-size: 35px;
+    color: red;
+}
+.cont {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}

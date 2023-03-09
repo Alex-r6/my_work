@@ -77,6 +77,7 @@ const slkad = [
 // slkad[0].data.from
 // innerHTML = `<div>asdasd</div>`
 
+<<<<<<< HEAD
 const res = document.querySelector('.res')
 
 function home_work() {
@@ -108,4 +109,82 @@ function home_work() {
 
 }
 home_work()
+=======
+const todo = [
+    {
+        language : 'HTML',
+        isActive : true,
+        id : 'asdasfsaasf'
+    },
+    {
+        language : 'CSS',
+        isActive : true,
+        id : 'as3dasfsaasf'
+    },
+    {
+        language : 'JS',
+        isActive : false,
+        id : '239ek2'
+    },
+]
+const res = document.querySelector('.res')
+const style = document.querySelector('.style')
+function make(){
+    
+    let a = '';
+   
+    for(const elem of todo){
+        a += `<div class="box">
+        <input class="check" ${elem.isActive ? 'checked' : ''} type="checkbox">
+        <div class="elemText">${elem.language}</div>
+        <button class="btn" id="as">X</button>
+        </div> `
+    }
+    res.innerHTML = a
+}
+// make()
+
+
+const shops = [
+    {
+        name : 'packet',
+        price : 1,
+        description : 'lasdas asd asd asdas d',
+        discount : 0,
+        size : '1kg',
+        isActia : false
+    },
+    {
+        name : 'milk',
+        price : 22,
+        description : 'lasdadsdas d',
+        discount : 0,
+        size : '1kg',
+        isActia : false
+    },
+    {
+        name : 'banana',
+        price : 30,
+        description : 'banana asd asd asdas d',
+        discount : 10,
+        size : '1kg',
+        isActia : true
+    },
+]
+// function make(){
+//     res.innerHTML = `<div class="style">`
+  
+//     for(const elem of todo){
+        // style.innerHTML += `<div class="box">`
+        // const box = document.querySelector('.box')
+//         box.innerHTML += `<input  class="check "  type="checkbox">`
+//         box.innerHTML += `<div>${elem.language}</div>`
+//         // const check = document.querySelector('.check')
+//         // if(elem.isActive){
+//         //     check.checked === 'checked'
+//         // }
+//     }
+// }
+// make()
+>>>>>>> 9e1586030f32580bb2e7d4840a499252dd634edc
 
